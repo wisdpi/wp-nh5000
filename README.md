@@ -1,6 +1,7 @@
 # WP-NH5000(P) driver for Raspberry Pi 5
 
 This is the driver released for WisdPi Raspberry Pi 5GbE expanision board with PCIe interface.
+WP-NH5000(P) use Realtek RTL8126 IC and the driver is also support [WisdPi WP-NA5000 PCIe 5GbE adapter](https://www.wisdpi.com/products/wisdpi-pcie-5g-base-t-ethernet-adapter).
 
 ## Requirements
 - Raspberry Pi 5
