@@ -7,6 +7,7 @@ This is the driver released for WisdPi Raspberry Pi 5GbE expanision board with P
 - Raspberry Pi OS (Kernel version: 6.6)
 - WP-NH5000 or WP-NH5000P
 ## Quick install
+![image](image/1.png)
 1. Clone the code :
 `git clone https://github.com/wisdpi/wp-nh5000.git`
 2. Change to the directory:
@@ -21,6 +22,7 @@ This is the driver released for WisdPi Raspberry Pi 5GbE expanision board with P
 lsmod | grep r8126
 ifconfig -a
 ```
+![image](image/2.png)
 
 ## Set the network
 ### Force the link status when insert the driver.
@@ -44,12 +46,10 @@ will force PHY to operate in 100Mpbs Half-duplex(nway force).
 2. Make sure that ethtool exists in /sbin.
 3. Force the link status as the following command.
 ```
-2.5G
-# ethtool -s eth0 autoneg on advertise 0x80000000002f
-
-# ethtool -s eth0 autoneg on advertise 0x002f (1G)
-# ethtool -s eth0 autoneg on advertise 0x000f (100M full)
-# ethtool -s eth0 autoneg on advertise 0x0003 (10M full)
+ethtool -s eth1 autoneg on advertise 0x80000000002f (2.5G)
+ethtool -s eth1 autoneg on advertise 0x002f (1G)
+ethtool -s eth1 autoneg on advertise 0x000f (100M full)
+ethtool -s eth1 autoneg on advertise 0x0003 (10M full)
 ```
 			
 ### Jumbo Frame
