@@ -27,6 +27,18 @@ ifconfig -a
 ```
 ![image](image/2.png)
 
+## Benchmark
+
+### iperf3
+![image](image/iperf3_test_1.png)
+
+### iperf3 --reverse
+![image](image/iperf3_test_1.png)
+
+### iperf3 --bidir
+![image](image/iperf3_test_1.png)
+
+
 ## Set the network
 ### Force the link status when insert the driver.
 If the user is in the path ~/r8126, the link status can be forced to one of the 5 modes as following command.
