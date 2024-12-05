@@ -33,10 +33,10 @@ ifconfig -a
 ![image](image/iperf3_test_1.png)
 
 ### iperf3 --reverse
-![image](image/iperf3_test_1.png)
+![image](image/iperf3_test_2.png)
 
 ### iperf3 --bidir
-![image](image/iperf3_test_1.png)
+![image](image/iperf3_test_3.png)
 
 
 ## Set the network
