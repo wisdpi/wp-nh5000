@@ -11,23 +11,23 @@ WP-NH5000(P) use Realtek RTL8126 IC and the driver is also support [WisdPi WP-NA
 - WP-NH5000 or WP-NH5000P
 ## Quick install
 ![image](image/1.png)
-0. Prepare:
 
+1. Prepare:
  ```
  sudo apt update
  sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
  sudo apt install linux-headers-$(uname -r)
 ```
 
-1. Clone the code :
+2. Clone the code :
 `git clone https://github.com/wisdpi/wp-nh5000.git`
-2. Change to the directory:
+3. Change to the directory:
 `cd wp-nh5000`
-3. If you are running the target kernel, then you should be able to do :
+4. If you are running the target kernel, then you should be able to do :
 `sudo sh ./autorun.sh`
-4. Reboot:
+5. Reboot:
 `sudo reboot`
-5. You can check whether the driver is loaded by using following commands.
+6. You can check whether the driver is loaded by using following commands.
 
 ```
 lsmod | grep r8126
