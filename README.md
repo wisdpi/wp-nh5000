@@ -99,3 +99,10 @@ ethtool --set-eee eth1 eee on tx-lpi on tx-timer 1546 advertise 0x0008 (100M ful
 ethtool --set-eee eth1 eee on tx-lpi on tx-timer 1546 advertise 0x0020 (1G)
 ethtool --set-eee eth1 eee on tx-lpi on tx-timer 1546 advertise 0x8000 (2.5G)
 ```
+## Ubuntu
+If you use Ubuntu on Raspberry Pi 5, you only need install the dkms rtl8125 driver. It works well.
+
+`sudo apt install r8125-dkms -y`
+
+### Test result
+![image](image/iperf3_test_4.png)
