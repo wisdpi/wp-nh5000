@@ -18,6 +18,13 @@ WP-NH5000(P) use Realtek RTL8126 IC and the driver is also support [WisdPi WP-NA
  sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
  sudo apt install linux-headers-$(uname -r)
 ```
+ add this to /boot/firmware/config.txt
+ ```
+# Enable the PCIe external connector
+dtparam=pciex1
+# Force Gen 3.0 speeds
+dtparam=pciex1_gen=3
+ ```
 
 2. Clone the code :
 `git clone https://github.com/wisdpi/wp-nh5000.git`
